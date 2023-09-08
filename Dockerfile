@@ -5,4 +5,4 @@ RUN mvn clean package -DskipTests
 FROM openjdk:20-jdk
 COPY --from=build /target/noodlestop-1.0-SNAPSHOT.war demo.war
 EXPOSE 8080
-ENTRYPOINT [ "java","-war","demo.war" ]
+ENTRYPOINT [ "java","-jar","demo.war" ]
