@@ -1,0 +1,179 @@
+:root {
+    --text-primary: #59534d;
+    --text-secondary: #f15a5c;
+    --text-dark: #2b2922;
+    --text-light: #8b7b7e;
+    --text-white: #ffffff;
+    --bg-primary: #fff6ed;
+    --bg-secondary: #dfedf5;
+    --bg-dark: #d0b69b;
+    --bg-light: #ffffff;
+    --button-color: #fc7273;
+    --fs-xl: 2rem;
+    --fs-large: 1.5rem;
+    --fs-medium: 0.875rem;
+    --fs-small: 0.75rem;
+    --spacing-xl: 2.625rem;
+    --spacing-large: 1.75rem;
+    --spacing-medium: 1rem;
+    --spacing-small: 0.5rem;
+    --spacing-tiny: 0.25rem;
+    --mobile-logo-height: 45px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    display: flex;
+    flex-direction: column;
+  
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+/*a {
+    display: block;
+    text-decoration: none;
+}*/
+
+/* font */
+body, .custom-bg{
+    background: var(--bg-primary)!important;
+    font-family: "articulat-cf", sans-serif;
+}
+
+html body {
+    font-family: "articulat-cf", sans-serif;
+}
+
+  
+h1 {
+    font-size: 3.5rem;
+}
+  
+h2 {
+    font-size: 1.75rem;
+}
+  
+h3 {
+    font-size: 1.5rem;
+}
+  
+p {
+    font-size: var(--fs-medium);
+}
+
+/* colors */
+
+h1 {
+    color: var(--text-light);
+}
+
+  
+h2 {
+    color: var(--text-primary);
+}
+  
+h3 {
+    color: var(--text-secondary);
+}
+
+p {
+    color: var(--text-dark);
+}
+
+a{
+    color: var(--text-primary)!important;
+}
+
+/*a:hover{
+    color: var(--text-secondary);
+}*/
+
+.button{
+    background: var(--button-color)!important;
+    color: white!important;
+}
+
+.container {
+    max-width: 1500px;
+    min-width: 320px;
+  
+    margin: auto;
+  
+    padding: var(--spacing-medium);
+}
+
+
+.square{
+    background: white;
+    padding: var(--spacing-large)!important;
+    border: 5px;
+    border-radius: 10px;
+}
+
+/*toast*/
+
+#toast {
+    min-width: 300px;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -120px;
+    background: #333;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    font-size: 18px;
+    visibility: hidden;
+    box-shadow: 0px 0px 100px #000;
+}
+
+#toast.display{
+    visibility: visible;
+    animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}

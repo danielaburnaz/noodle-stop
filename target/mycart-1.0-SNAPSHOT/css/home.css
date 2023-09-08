@@ -1,0 +1,14 @@
+.image-section {
+    height: 40vh;
+    background-color: var(--bg-dark);
+    background-image: url(https://i.imgur.com/LQvRsRN.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative ;
+}
