@@ -3,6 +3,6 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 FROM tomcat:9.0-jre11
-COPY --from=build /target/noodlestop-1.0-SNAPSHOT.war /main/webapp/noodlestop.war
+COPY --from=build /target/noodlestop-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/noodlestop.war
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
