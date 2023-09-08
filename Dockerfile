@@ -1,4 +1,4 @@
-FROM maven:3.8.6-openjdk-20.ea-b6 AS build
+FROM jelastic/maven:3.8.6-openjdk-20.ea-b6 AS build
 COPY . .
 RUN mvn clean package -DskipTests
 
