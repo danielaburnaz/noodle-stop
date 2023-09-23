@@ -1,0 +1,18 @@
+version: '3'
+services:
+  tomcat:
+    image: tomcat:9.0-jre11
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./webapps:/usr/local/tomcat/webapps
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: mycart
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
