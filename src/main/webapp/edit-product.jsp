@@ -48,6 +48,10 @@
                     <label for="name">Product name:</label>
                     <input type="text" name="pName" value="<%= p.getpName() %>">
                 </div>
+               <div class="mb-3">
+                    <label for="name">Product name:</label>
+                    <input type="text" name="pDesc" value="<%= p.getpDesc() %>">
+                </div>
                 <div class="mb-3">
                     <label for="name">Product price:</label>
                     <input type="number" name="pPrice" value="<%= p.getpPrice() %>">

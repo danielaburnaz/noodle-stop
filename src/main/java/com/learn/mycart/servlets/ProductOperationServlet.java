@@ -116,6 +116,7 @@ public class ProductOperationServlet extends HttpServlet {
             }else if(op.trim().equals("editproduct")){
                 int productId = Integer.parseInt(request.getParameter("productId"));
                 String newName = request.getParameter("pName");
+                String newDesc = request.getParameter("pDesc");
                 double newPrice = Double.parseDouble(request.getParameter("pPrice"));
                 int newDiscount = Integer.parseInt(request.getParameter("pDiscount"));
                 int newQuantity = Integer.parseInt(request.getParameter("pQuantity"));
@@ -136,9 +137,11 @@ public class ProductOperationServlet extends HttpServlet {
                 } else {
                     // Update product attributes
                     product.setpName(newName);
+                    product.setpDesc(newDesc);
                     product.setpPrice(newPrice);
                     product.setpDiscount(newDiscount);
                     product.setpQuantity(newQuantity);
+                    
                     // Update other attributes as needed
                     
                     //get category by id

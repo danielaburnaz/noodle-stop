@@ -90,8 +90,7 @@ CREATE TABLE `user` (
 /*Data for the table `user` */
 
 insert  into `user`(`user_id`,`date_of_birth`,`user_address`,`user_email`,`user_lastname`,`user_name`,`user_password`,`user_phone`,`user_pic`,`user_type`) values 
-(1,'2023-08-17','dasd','asdsad@gmail.com','he coming','oh lawd','d6a9450dc08555d6ecfaf7162e5267f401e6dd9a','23123','default.jpg','admin'),
-(19,'2000-06-21','1','test@hash.com','time','test','7110eda4d09e062aa5e4a390b0a572ac0d2c0220','1','default.jpg','customer');
+(1,'2023-08-17','dasd','asdsad@gmail.com','he coming','oh lawd','d6a9450dc08555d6ecfaf7162e5267f401e6dd9a','23123','default.jpg','admin')
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
